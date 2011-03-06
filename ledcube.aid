@@ -1,0 +1,46 @@
+<AID Version="2.0.12.0" Device="ATmega32">
+  <Options>
+    <Frequency>1,6E+07</Frequency>
+    <Package>TQFP</Package>
+    <PinSort>PinNumber</PinSort>
+    <CodeFileName>avr_init.c</CodeFileName>
+    <HeaderFileName>avr_init.h</HeaderFileName>
+    <AssumeDefaultState>True</AssumeDefaultState>
+    <WriteUnmodifiedBits>True</WriteUnmodifiedBits>
+    <UnusedPortPins>Input</UnusedPortPins>
+  </Options>
+  <Pin Pin="PA5" Function="PA5" />
+  <Pin Pin="PA4" Function="PA4" />
+  <Pin Pin="PA3" Function="PA3" />
+  <Pin Pin="PA2" Function="PA2" />
+  <Pin Pin="PA1" Function="PA1" />
+  <Pin Pin="PA0" Function="PA0" />
+  <BitField BitField="MSTR" Value="1" />
+  <BitField BitField="WGM0" Value="2" />
+  <BitField BitField="CS0" Value="5" />
+  <BitField BitField="TOIE0" Value="0" />
+  <BitField BitField="OCRA0" Value="23" />
+  <BitField BitField="OCIEA0" Value="1" />
+  <BitField BitField="WDP" Value="0" />
+  <BitField BitField="Mode" Value="0" />
+  <BitField BitField="JTD" Value="1" />
+  <Bit Register="PORTA" Bit="PORTA0" Value="0" Pin="PA0" Function="PA0" />
+  <Bit Register="PORTA" Bit="PORTA1" Value="0" Pin="PA1" Function="PA1" />
+  <Bit Register="PORTA" Bit="PORTA2" Value="0" Pin="PA2" Function="PA2" />
+  <Bit Register="PORTA" Bit="PORTA3" Value="0" Pin="PA3" Function="PA3" />
+  <Bit Register="PORTA" Bit="PORTA4" Value="0" Pin="PA4" Function="PA4" />
+  <Bit Register="PORTA" Bit="PORTA5" Value="0" Pin="PA5" Function="PA5" />
+  <Bit Register="DDRA" Bit="DDA0" Value="1" Pin="PA0" Function="PA0" />
+  <Bit Register="DDRA" Bit="DDA1" Value="1" Pin="PA1" Function="PA1" />
+  <Bit Register="DDRA" Bit="DDA2" Value="1" Pin="PA2" Function="PA2" />
+  <Bit Register="DDRA" Bit="DDA3" Value="1" Pin="PA3" Function="PA3" />
+  <Bit Register="DDRA" Bit="DDA4" Value="1" Pin="PA4" Function="PA4" />
+  <Bit Register="DDRA" Bit="DDA5" Value="1" Pin="PA5" Function="PA5" />
+  <Bit Register="PORTB" Bit="PORTB4" Value="1" Pin="PB4" Function="Unused" />
+  <Item Class="Port" Type="Variable" Name="ROW_CLK" Comment="4017 clock input" StartBit="0" NumBits="1" Pin="PA0" Function="PA0" />
+  <Item Class="Port" Type="Variable" Name="ROW_RESET" Comment="4017 reset input" StartBit="1" NumBits="1" Pin="PA1" Function="PA1" />
+  <Item Class="Port" Type="Variable" Name="COL_XLAT" Comment="TLC5947 XLAT input" StartBit="2" NumBits="1" Pin="PA2" Function="PA2" />
+  <Item Class="Port" Type="Variable" Name="COL_DATA" Comment="TLC5947 serial data input" StartBit="3" NumBits="1" Pin="PA3" Function="PA3" />
+  <Item Class="Port" Type="Variable" Name="COL_CLK" Comment="TLC5947 clock input" StartBit="4" NumBits="1" Pin="PA4" Function="PA4" />
+  <Item Class="Port" Type="Variable" Name="COL_BLANK" Comment="TLC5947 BLANK input" StartBit="5" NumBits="1" Pin="PA5" Function="PA5" />
+</AID>
