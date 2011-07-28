@@ -24,6 +24,8 @@
 #include "net.h"
 #include "avr_init.h"
 
+#define nop() asm volatile ("nop") 
+
 static uint8_t mymac[6] = {0x54,0x55,0x58,0x10,0x00,0x29};
 // how did I get the mac addr? Translate the first 3 numbers into ascii is: TUX
 static uint8_t myip[4] = {192,168,1,99};
@@ -131,14 +133,13 @@ ISR( TIMER0_COMP_vect )
             do_clk( 12 );
             break;
       }
-      
-      if( actual_column == 99 )
-      {
-         COL_BLANK = 1;
-      }
-
    }
+   nop();
+   nop(); 
+   COL_BLANK = 1;
    COL_XLAT = 1;
+   nop();
+   nop(); 
    COL_XLAT = 0;
    if( !actual_layer )
    {
